@@ -1,0 +1,10 @@
+<h3
+  [ngStyle]="{background: (isCarSold === true) ? '#828282' : null, color: (isCarSold === true) ? 'white' : null}"
+  class="app-car">
+  <span>Номер: {{ id }} </span>
+  <span>Название: {{ car.name }}, </span>
+  <span> Год: {{ car.year }}</span>
+  <button class="btn btn-danger" (click)="deleteCar(id)">Удалить</button>
+  <label class="is-car-sold" for="isCarSold">Продана: </label>
+  <input id="isCarSold" type="checkbox" [(ngModel)]="isCarSold">
+</h3>

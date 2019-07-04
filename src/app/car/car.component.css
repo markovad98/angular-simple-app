@@ -1,0 +1,25 @@
+.app-car {
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.app-car button,
+.app-car span {
+  margin: 0 15px;
+}
+
+.app-car .is-car-sold {
+  display: block;
+  padding: 0 10px;
+}
+
+.app-car:hover {
+  background-color: dodgerblue;
+  color: white;
+}

@@ -1,0 +1,17 @@
+<!-- add car panel -->
+<app-add-car (onAddCar)="updateCarList($event)"></app-add-car>
+<h3 [ngStyle]="{display: (isEmpty === false) ? 'none' : 'block'}" class="alert alert-danger is-empty">Вы оставили поле пустым!</h3>
+<hr>
+
+<!-- car list -->
+<app-car
+  *ngFor="let car of cars; let idx = index"
+  [ngStyle]="{backgroundColor: (idx + 1) % 2 === 0 ? 'black' : 'transparent'}"
+  [id]="idx"
+  [car]="car"
+  (onDeleteCar)="deleteCar($event)"
+>
+</app-car>
+
+
+
